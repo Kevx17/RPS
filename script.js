@@ -72,13 +72,53 @@ else if (computer == 1 && user == 3){
 
 
 btnRock.addEventListener("click", function() {
+    if (count1 == 0 && count2 == 0) {
+        container.innerHTML = "";
+    }
     playgame(1);
+    if (count1 == 5) {
+        container.innerHTML = "You Lost!";
+        count1 = 0;
+        count2 = 0;
+    }
+    else if (count2 == 5) {
+        container.innerHTML = "You Won!";
+        count1 = 0;
+        count2 = 0;
+    }
 });
 
 btnPaper.addEventListener("click", function() {
+    if (count1 == 0 && count2 == 0) {
+        container.innerHTML = "";
+    }
     playgame(2);
+    if (count1 == 5) {
+        container.innerHTML = "You Lost!";
+        count1 = 0;
+        count2 = 0;
+    }
+    else if (count2 == 5) {
+        container.innerHTML = "You Won!";
+        count1 = 0;
+        count2 = 0;
+    }
 });
 
 btnScissors.addEventListener("click", function() {
+    if (count1 == 0 && count2 == 0) {
+        container.innerHTML = "";
+    }
     playgame(3);
+    if (count1 == 5) {
+        container.innerHTML = "You Lost!";
+        count1 = 0;
+        count2 = 0;
+    }
+    else if (count2 == 5) {
+        container.innerHTML = "You Won!";
+        count1 = 0;
+        count2 = 0;
+    }
 });
+
